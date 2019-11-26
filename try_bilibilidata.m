@@ -1,8 +1,8 @@
 %制作结构体 by Asmir /2019.5.11
 %
-%  S =table2struct(text1); 将text1这个table转成struct
-% t = text(:,1)  获取text1的第一列id号
-% t_id = table2array(t) 将table t 转数组
+S =table2struct(text1); 将text1这个table转成struct
+t = text(:,1)  获取text1的第一列id号
+t_id = table2array(t) 将table t 转数组
 for i=1:length(S)
     s=S(i);%S是导在workspace的csv文件
     tid=t_id(i);%tid是csv的id号
